@@ -1,0 +1,6 @@
+local lastcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local lastcamcf = workspace.CurrentCamera.CameraSubject
+
+workspace.Remote.loadchar:InvokeServer()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastcf
+workspace.CurrentCamera.CameraSubject = lastcamcf
